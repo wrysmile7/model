@@ -1,0 +1,60 @@
+@import 'element-ui/lib/theme-chalk/index.css';
+
+html,body{
+  margin: 0;
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+
+// 滚动条样式
+.scroll-none{
+  &::-webkit-scrollbar{
+    width: 5px;
+    display: none;
+  }
+}
+.box-scroll,
+.box-scroll>.el-textarea__inner,
+.el-table__body-wrapper,
+.el-transfer-panel__list{
+  overflow: auto;
+  &::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba($color: #000000, $alpha: .8);
+    background-color: #4fb9ff;
+    background-image: -webkit-linear-gradient(45deg,
+        #1ea5ff 10%,
+        transparent 10%,
+        transparent 20%,
+        #1ea5ff 20%,
+        #1ea5ff 30%,
+        transparent 30%,
+        transparent 40%,
+        #1ea5ff 40%,
+        #1ea5ff 50%,
+        transparent 50%,
+        transparent 60%,
+        #1ea5ff 60%,
+        #1ea5ff 70%,
+        transparent 70%,
+        transparent 80%,
+        #1ea5ff 80%,
+        #1ea5ff 90%,
+        transparent 90%,
+        transparent);
+  }
+  &::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba($color: #000000, $alpha: .8);
+    border-radius: 10px;
+    background: #006cb5;
+  }
+  &::-webkit-scrollbar-corner{
+    background: none;
+  }
+}
